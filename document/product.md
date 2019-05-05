@@ -15,7 +15,7 @@
 | ---- | ------- | ----- | ----------- |
 
 #### Request example
-URL : `{{ur}}/product`
+URL : `{{url}}/product`
 
 METHOD : `GET`
 
@@ -88,10 +88,10 @@ BODY:
 
 
 ## Add new product
-| Name   | Description    |
-| ------ | -------------- |
-| Method | PUT            |
-| Path   | {{ur}}/product |
+| Name   | Description     |
+| ------ | --------------- |
+| Method | PUT             |
+| Path   | {{url}}/product |
 
 ### Request Body description
 | Name        | Require | Type   | Description                                             |
@@ -107,7 +107,7 @@ BODY:
 | length | YES     | Number | ความสูง     |
 
 #### Request example
-URL : `{{ur}}/product`
+URL : `{{url}}/product`
 
 METHOD : `PUT`
 
@@ -128,11 +128,12 @@ BODY :
 
 ### Response Body(data) description
 | Name       | Description                                             |
-| ---------- | ------------------------------------------------------- |  |  |
+| ---------- | ------------------------------------------------------- |
 | product_id | หมวดหมู่ของประเภทสินค้า 1=อาหารเสริม 2=เสื้อผ้า 3=อื่นๆ |
-| size`Size` | ------------------------------------------------------- |
+| size`Size` | -                                                       |
 
 #### Response example
+```
 {
     "code": 1,
     "msgInfo": "OK",
@@ -149,20 +150,21 @@ BODY :
         "export_date": ""
     }
 }
+```
 
 ## Remove product
-| Name   | Description                |
-| ------ | -------------------------- |
-| Method | DELETE                     |
-| Path   | {{ur}}/product/:product_id |
+| Name   | Description                 |
+| ------ | --------------------------- |
+| Method | DELETE                      |
+| Path   | {{url}}/product/:product_id |
 
 ### Request query description
 | Name       | Require | Type   | Description |
 | ---------- | ------- | ------ | ----------- |
-| product_id | YES     | Number | ----------- |
+| product_id | YES     | Number | -           |
 
 #### Request example
-URL : `{{ur}}/product/5`
+URL : `{{url}}/product/5`
 
 METHOD : `DELETE`
 
@@ -171,6 +173,7 @@ BODY :
 ```
 
 #### Response example
+```
 {
     "code": 1,
     "msgInfo": "OK",
@@ -188,3 +191,4 @@ BODY :
         "cost": 50
     }
 }
+```
