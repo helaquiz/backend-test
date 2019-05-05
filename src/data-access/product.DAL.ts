@@ -30,10 +30,9 @@ export class ProductDAL {
                 const productDetail: IProduct = this.data.product._data[position]
                 productDetail.export_date = new Date().toJSON();
                 productDetail.cost = this.calculateCost(productDetail);
-                console.log(productDetail);
                 return resolve(productDetail);
             } else {
-                return resolve(false)
+                return resolve(false);
             }
         });
 

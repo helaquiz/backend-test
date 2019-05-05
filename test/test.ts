@@ -1,7 +1,6 @@
 import { calculateCostSuppleMentary, calculateCostWearing, calculateCostOther } from "../src/libs/basic-helper";
-const chai = require('chai')
-const expect = chai.expect
-var assert = require('assert');
+const chai = require('chai');
+const expect = chai.expect;
 describe('Calculate Cost', function () {
   it('อาหารเสริม คำนวนถูกต้อง', function (done) {
     const productMock = {
@@ -18,8 +17,8 @@ describe('Calculate Cost', function () {
       "export_date": ""
     }
     const cost = calculateCostSuppleMentary(5, productMock, 1)
-    expect(cost).to.be.equal(31)
-    done()
+    expect(cost).to.be.equal(31);
+    done();
   });
 
   it('เสื้อผ้า รู้น้ำหนัก คำนวนถูกต้อง', function (done) {
@@ -53,6 +52,7 @@ describe('Calculate Cost', function () {
       "import_date": "2019-04-25T09:33:54.775Z",
       "export_date": ""
     }
+    
     const cost = calculateCostWearing(10, productMock, 20);
     expect(cost).to.be.equal(500)
     done()

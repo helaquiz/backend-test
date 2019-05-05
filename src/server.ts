@@ -41,16 +41,3 @@ server.listen(Configuration.serverPort, function () {
     console.log(`${Configuration.serverTitle} Server start listening on port : ${Configuration.serverPort}`);
     console.log(`=========================Worker ${process.pid} started ===================================`);
 });
-
-// export const startServer = (port: number, callback: Function) => {
-//     server.listen(port, callback);
-// }
-
-// export { server }
-
-// รับเข้าสินค้าได้เป็นกล่อง 
-// นำสินค้าออกได้เป็นกล่อง
-// คำนวณค่าบริการสำหรับการจัดเก็บสินค้าครั้งนั้นๆ ได้
-// ดูรายละเอียดสินค้าต่างๆ ที่อยู่ในคลังได้   PASS 
-// ดูข้อมูลรายละเอียดผลประกอบการทั้งหมดได้
-// อื่นๆ ที่เห็นว่าเป็นประโยชน์ต่อการดำเนินกิจการ

@@ -1,5 +1,3 @@
-import { calculateCostSuppleMentary } from "../libs/basic-helper";
-
 export class HistoryDAL {
 
     private data: any

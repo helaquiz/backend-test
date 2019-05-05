@@ -8,6 +8,7 @@ export interface IProduct {
   },
   weight: number
   import_date: string
-  export_date: string | Date
+  export_date: string
   cost?: number
+  day?: number;
 } 
