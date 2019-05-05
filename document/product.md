@@ -97,7 +97,7 @@ BODY:
 | Name        | Require | Type   | Description                                             |
 | ----------- | ------- | ------ | ------------------------------------------------------- |
 | category_id | YES     | Number | หมวดหมู่ของประเภทสินค้า 1=อาหารเสริม 2=เสื้อผ้า 3=อื่นๆ |
-| size        | YES     | `Size` | ------------------------------------------------------- |
+| size        | YES     | `Size` | -                                                       |
 
 ### `Size` object description
 | Name   | Require | Type   | Description |
