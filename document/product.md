@@ -121,16 +121,7 @@ BODY :
         "length": 0.1
     }
 }
-```
-
-
-
-
-### Response Body(data) description
-| Name       | Description                                             |
-| ---------- | ------------------------------------------------------- |
-| product_id | หมวดหมู่ของประเภทสินค้า 1=อาหารเสริม 2=เสื้อผ้า 3=อื่นๆ |
-| size`Size` | -                                                       |
+```                                                   
 
 #### Response example
 ```
@@ -159,9 +150,9 @@ BODY :
 | Path   | {{url}}/product/:product_id |
 
 ### Request query description
-| Name       | Require | Type   | Description |
-| ---------- | ------- | ------ | ----------- |
-| product_id | YES     | Number | -           |
+| Name       | Require | Type   | Description       |
+| ---------- | ------- | ------ | ----------------- |
+| product_id | YES     | Number | รหัส id ของสินค้า |
 
 #### Request example
 URL : `{{url}}/product/5`
