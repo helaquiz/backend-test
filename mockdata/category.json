@@ -1,0 +1,20 @@
+{
+  "_description": "Ware house Mock",
+  "_data": [
+    {
+      "category_id": 1,
+      "category_name": "อาหารเสริม",
+      "pricing_type_id": 1
+    },
+    {
+      "category_id": 2,
+      "category_name": "เสื้อผ้า",
+      "pricing_type_id": 2
+    },
+    {
+      "category_id": 3,
+      "category_name": "อื่นๆ",
+      "pricing_type_id": 3
+    }
+  ]
+}

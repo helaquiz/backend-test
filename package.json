@@ -1,0 +1,44 @@
+{
+  "name": "backend-test-1",
+  "version": "1.0.0",
+  "description": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คลังแห่งหนึ่งดำเนินธุรกิจให้เช่าพื้นที่เพื่อเก็บสินค้า โดยคลังเก็บสินค้าเป็นกล่องขนาด กว้าง x ยาว x สูง และอาจมีการเก็บข้อมูลน้ำหนักด้วย แต่ไม่จำเป็น\r </br>\r &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คลังต้องการคิดค่าบริการลูกค้าตามจำนวนวันที่ลูกค้านำสินค้ามาเก็บไว้ จนถึงวันที่ลูกค้านำสินค้าออกจากคลัง โดยไม่สนใจเศษของวัน แต่คิดค่าบริการขั้นต่ำ 1 วัน <i>(ตัวอย่าง เก็บวันที่ 12/04/2019 เวลา 12.00 และ นำออกวันที่ 14/04/2019 เวลา 08.00 คิดค่าบริการ 2 วัน)</i> แต่ทั้งนี้ทั้งนั้นต้องเก็บเวลาที่นำสินค้าเข้า และเวลาที่นำสินค้าออกด้วย</br>\r &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปัจจุบันมีวิธีคิดค่าบริการอยู่ 3 แบบ <i>(และมีความเป็นไปได้สูงว่า จะมีวิธีคิดค่าบริการแบบอื่นอีกหลากหลายวิธีตามหมวดหมู่ของสินค้า เมื่อคลังให้บริการลูกค้ามากขึ้น)</i>\r </br>\r 1. ถ้าสินค้าอยู่ในหมวดหมู่ \"อาหารเสริม\" ให้คิดค่าบริการตามปริมาตรกล่อง คือ คิดค่าบริการวันละ 1 บาท ต่อ ปริมาตรกล่อง 1 <u>ลูกบาศก์เซนติเมตร</u> แต่เนื่องจากคลังต้องดูแลสินค้าให้มากขึ้น เมื่อจำนวนวันผ่านไป จึงคิดค่าบริการสูงขึ้นเป็น 2 เท่า ในวันถัดๆ ไป\r >กล่องมีปริมาตร 1 ลูกบาศก์เซนติเมตร",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build/src/server.js",
+    "start-nodemon": "tsc && nodemon build/src/server.js",
+    "test": "mocha build/test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PandaMaru/backend-test-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PandaMaru/backend-test-1/issues"
+  },
+  "homepage": "https://github.com/PandaMaru/backend-test-1#readme",
+  "dependencies": {
+    "@types/mocha": "~5.2.6",
+    "ajv": "^6.9.1",
+    "body-parser": "^1.18.3",
+    "chai": "~4.2.0",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.0",
+    "exceljs": "^1.9.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.16.1",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/method-override": "0.0.31",
+    "@types/morgan": "^1.7.35",
+    "mocha": "~6.1.4",
+    "typescript": "3.3.1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_description": "Ware house Mock unit (kg,m)",
+  "_data": [
+    {
+      "product_id": 1,
+      "category_id": 1,
+      "size": {
+        "width": 0.01,
+        "hight": 0.01,
+        "length": 0.01
+      },
+      "weight": 0.001,
+      "import_date": "2019-05-02T10:33:54.775Z",
+      "export_date": ""
+    },
+    {
+      "product_id": 2,
+      "category_id": 2,
+      "size": {
+        "width": 0.05,
+        "hight": 0.05,
+        "length": 0.05
+      },
+      "weight": 3.0,
+      "import_date": "2019-04-25T09:33:54.775Z",
+      "export_date": ""
+    },
+    {
+      "product_id": 3,
+      "category_id": 2,
+      "size": {
+        "width": 0.35,
+        "hight": 0.10,
+        "length": 0.10
+      },
+      "weight": 0,
+      "import_date": "2019-04-25T09:33:54.775Z",
+      "export_date": ""
+    },
+    {
+      "product_id": 4,
+      "category_id": 3,
+      "size": {
+        "width": 0.01,
+        "hight": 0.01,
+        "length": 0.01
+      },
+      "weight": 0.1,
+      "import_date": "2019-05-03T09:33:54.775Z",
+      "export_date": ""
+    }
+  ]
+}

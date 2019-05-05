@@ -1,0 +1,17 @@
+{
+  "_description": "Ware house Mock",
+  "_data": [
+    {
+      "pricing_type_id": 1,
+      "rate": 10
+    },
+    {
+      "pricing_type_id": 2,
+      "rate": 20
+    },
+    {
+      "pricing_type_id": 3,
+      "rate": 10
+    }
+  ]
+}
